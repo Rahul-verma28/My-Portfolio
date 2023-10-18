@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600&display=swap');
 
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&display=swap');
-</style>
-
 html{
     scroll-behavior:smooth;
 }
@@ -36,25 +32,18 @@ html{
     transition: all 0.3s ease;
 }
 
-.show-hide{
-    
-}
-
 ul {
     list-style: none;
     margin-top: 30px;
 }
 
 .section {
-    margin: 20px 0;
     min-height: 100vh;
     display: block;
     opacity: 1;
-    padding: 0 30px;
-    display: flex;  
+    padding: 20px 30px;
+    /* display: flex;   */
     transition: all 0.3s ease;
-
-
 }
 
 .main-container {
@@ -69,18 +58,8 @@ ul {
 }
 
 @keyframes slidesection{
-
     from{width: 30%;}
     to{width: 100%;}
-    /* 0%{
-        transform: translateY(0%)
-    }
-    /* 50%{
-        transform: translateY(10%)
-    } *
-    100%{
-        transform: translateY(-10%)
-    } */
 }
 
 
@@ -125,13 +104,10 @@ ul {
 }
 
 .sidebar .logo a {
-    font-family: 'EB Garamond', serif;
     padding: 20px 30px;
     text-decoration: none;
     color:orange;
     font-weight: bold;
-    /* font-size: 3rem; */
-
 }
 
 .sidebar ul li {
@@ -239,7 +215,6 @@ h2 {
 
 h2 span {
     font-size: 1.8rem;
-    font-family: 'EB Garamond', serif;
     font-weight: bolder;
     color: orangered;
 }
@@ -253,7 +228,6 @@ p {
 .section .container {
     padding: 20px;
     max-width: 100%;
-    /* min-height: 100%; */
     width: 100%;
     margin: auto;
 }
@@ -303,7 +277,6 @@ p {
     width: 100%;
     padding: 10px 0;
     display: flex;
-    width: 100%;
     flex-direction: column;
 
 }
@@ -463,7 +436,6 @@ p {
 
 .portfolio img{
     width: 100%;
-    /* height: 20vh; */
     margin: 20px;
     border-radius: 10px;
 }
@@ -501,6 +473,7 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 80%;
     max-width: 100%;
     text-align: center;
     margin: auto;
