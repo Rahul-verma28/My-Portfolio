@@ -6,10 +6,10 @@ var typed = new Typed(".typing", {
 })
 
 const nav = document.querySelector(".nav");
-navlist = document.querySelectorAll("li"),
-    totalNavList = navlist.length,
-    sections = document.querySelectorAll(".section"),
-    totalsection = sections.length;
+const navlist = document.querySelectorAll("li")
+const totalNavList = navlist.length
+const sections = document.querySelectorAll(".section")
+const totalsection = sections.length;
 
 for (let i = 0; i < totalNavList; i++) {
     const a = navlist[i].querySelector("a");
@@ -30,7 +30,6 @@ function show(element) {
     for (let i = 0; i < totalsection; i++) {
         sections[i].classList.remove("action");
     }
-
     const href = element.getAttribute("href").split("#")[1];
     document.querySelector("#" + href).classList.add("active");
 }
@@ -50,11 +49,10 @@ menubtn.addEventListener("click", function () {
 })
 
 function sidebartogglerbtn() {
-
     sidebar.classList.toggle("open");
 }
 
 const btn = document.querySelector(".btn");
-btn.addEventListener("click", function(){
-    
+btn.addEventListener("click", function () {
+
 })
