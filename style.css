@@ -42,7 +42,6 @@ ul {
     display: block;
     opacity: 1;
     padding: 20px 30px;
-    /* display: flex;   */
     transition: all 0.3s ease;
 }
 

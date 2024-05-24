@@ -5,6 +5,8 @@ var typed = new Typed(".typing", {
     loop: true
 })
 
+
+
 const nav = document.querySelector(".nav");
 const navlist = document.querySelectorAll("li")
 const totalNavList = navlist.length
@@ -17,10 +19,6 @@ for (let i = 0; i < totalNavList; i++) {
         for (let j = 0; j < totalNavList; j++) {
             navlist[j].querySelector("a").classList.remove("active");
         }
-        for (let i = 0; i < totalsection; i++) {
-            sections[i].classList.add("hidden");
-        }
-        sections[i].classList.remove("hidden");
         a.classList.add("active");
         show(this);
     })
@@ -41,18 +39,10 @@ menu.addEventListener("click", function () {
 })
 
 
-const menubtn = document.querySelector(".menu"),
+const sidebartogglebtn = document.querySelector(".sidebartoggle"),
     sidebar = document.querySelector(".sidebar");
 
-menubtn.addEventListener("click", function () {
-    sidebartogglerbtn();
-})
 
-function sidebartogglerbtn() {
+sidebartogglebtn.addEventListener("click", function () {
     sidebar.classList.toggle("open");
-}
-
-const btn = document.querySelector(".btn");
-btn.addEventListener("click", function () {
-
 })
